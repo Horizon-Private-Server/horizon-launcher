@@ -22,7 +22,7 @@ echo ========================================
 echo BUILD SUCCESSFUL!
 echo ========================================
 echo.
-echo Output: webinstaller\bin\Release\net8.0-windows\win-x64\publish\UYALauncherWebInstall.exe
+echo Output: webinstaller\bin\Release\net8.0-windows\win-x64\publish\HorizonLauncherWebInstall.exe
 echo.
 echo This is a tiny (~2MB) web installer that downloads the full installer from GitHub.
 echo Perfect for quick downloads and always gets the latest version!
