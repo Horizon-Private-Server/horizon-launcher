@@ -8,7 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace UYALauncherWebInstall;
+namespace HorizonLauncherWebInstall;
 
 public class Program {
     [STAThread]
@@ -143,7 +143,7 @@ public class InstallerWindow : Window {
 
             UpdateStatus("Downloading installer...", 20);
             
-            var tempPath = Path.Combine(Path.GetTempPath(), "UYALauncherInstaller.exe");
+            var tempPath = Path.Combine(Path.GetTempPath(), "HorizonLauncherInstaller.exe");
             await DownloadFileAsync(installerUrl, tempPath);
 
             UpdateStatus("Launching installer...", 95);
@@ -171,7 +171,7 @@ public class InstallerWindow : Window {
 
     private async Task<string> GetLatestInstallerUrl() {
         using var client = new HttpClient();
-        client.DefaultRequestHeaders.Add("User-Agent", "UYALauncherWebInstall");
+        client.DefaultRequestHeaders.Add("User-Agent", "HorizonLauncherWebInstall");
 
         var url = $"https://api.github.com/repos/{GitHubUser}/{GitHubRepo}/releases/latest";
         var response = await client.GetStringAsync(url);
@@ -182,7 +182,7 @@ public class InstallerWindow : Window {
         if (root.TryGetProperty("assets", out var assets)) {
             foreach (var asset in assets.EnumerateArray()) {
                 var name = asset.GetProperty("name").GetString();
-                if (name == "UYALauncherInstaller.exe") {
+                if (name == "HorizonLauncherInstaller.exe") {
                     return asset.GetProperty("browser_download_url").GetString() ?? string.Empty;
                 }
             }
@@ -193,7 +193,7 @@ public class InstallerWindow : Window {
 
     private async Task DownloadFileAsync(string url, string outputPath) {
         using var client = new HttpClient();
-        client.DefaultRequestHeaders.Add("User-Agent", "UYALauncherWebInstall");
+        client.DefaultRequestHeaders.Add("User-Agent", "HorizonLauncherWebInstall");
 
         using var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
         response.EnsureSuccessStatusCode();
