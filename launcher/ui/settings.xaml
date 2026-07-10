@@ -330,10 +330,6 @@
                         </StackPanel>
 
                         <!-- Credits -->
-                        <TextBlock Text="Created by Troy"
-                                FontWeight="SemiBold"
-                                Margin="0,10,0,5"/>
-
                         <TextBlock Text="This project is community-driven and not affiliated with Sony Interactive Entertainment."
                                 TextWrapping="Wrap"
                                 FontSize="12"
@@ -345,7 +341,7 @@
                                 Foreground="{StaticResource TextSecondaryBrush}"
                                 Margin="0,0,0,5"/>
 
-                        <TextBlock Text="&#169; 2026 Metroynome"
+                        <TextBlock Text="&#169; 2026 Horizon Private Server"
                                 FontSize="12"
                                 Foreground="{StaticResource TextSecondaryBrush}"
                                 Margin="0,0,0,5"/>
