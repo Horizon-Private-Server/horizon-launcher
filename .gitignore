@@ -110,7 +110,7 @@ updater/updates/
 ## Application specific
 *.exe.new
 *.exe.old
-UYALauncherUpdater.exe
+HorizonLauncherUpdater.exe
 
 ## Archives
 *.zip

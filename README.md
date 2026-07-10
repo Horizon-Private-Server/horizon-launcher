@@ -1,10 +1,10 @@
 # Horizon Launcher
 
-A modern C# WPF launcher for Ratchet & Clank: Up Your Arsenal (UYA) on PCSX2.
+A modern modern Launcher for Ratchet and Clank: Up Your Arsenal and Ratchet: Deadlocked for PCSX2.
 
 ## Features
 
-- 🎮 Launch PCSX2 with UYA automatically
+- 🎮 Launch PCSX2 with Ratchet and Clank: Up Your Arsenal or ratchet: Deadlocked automatically
 - 🪟 Embed PCSX2 window inside the launcher (optional)
 - 🎨 Modern Windows 10/11 UI with WPF
 - 🔧 Automatic game patches (widescreen, boot to multiplayer, etc.)
@@ -20,6 +20,7 @@ A modern C# WPF launcher for Ratchet & Clank: Up Your Arsenal (UYA) on PCSX2.
 - .NET 8.0 Runtime (for running)
 - PCSX2 emulator
 - Ratchet & Clank: Up Your Arsenal ISO (NTSC or PAL)
+- Ratchet: Deadlocked (NTSCU Only)
 
 ## Building
 
@@ -61,18 +62,11 @@ dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
 ## First Run
 
 1. Launch the application
-2. Select your UYA ISO file
-3. Select your PCSX2 executable (pcsx2.exe or pcsx2-qt.exe)
-4. Choose your region (NTSC or PAL)
-5. Configure patches and settings
-6. Click "Launch"
+2. Select your ISO file
+3. Select your BIOS File.
+4. Configure patches and settings
+5. Click "Launch"
 
-## Configuration
-
-Configuration is stored as JSON in:
-```
-%APPDATA%\HorizonLauncher\config.json
-```
 
 ## Hotkeys
 
@@ -85,7 +79,7 @@ The launcher can apply the following patches to PCSX2:
 
 - **Boot to Multiplayer**: Skip the single-player intro and boot directly to multiplayer
 - **Widescreen**: Enable 16:9 widescreen support
-- **Progressive Scan**: Enable progressive scan mode
+- **DNAS Skip**: Skips the DNAS Screen when connecting online.
 
 Patches are automatically written to PCSX2's `.pnach` files.
 

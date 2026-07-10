@@ -120,12 +120,12 @@ public static class Updater {
         if (!IsNewerVersion(CurrentVersion, tag))
             return (false, string.Empty, tag);
 
-        // Look for UYALauncherUpdater.exe in assets
+        // Look for HorizonLauncherUpdater.exe in assets
         var updaterUrl = string.Empty;
         if (root.TryGetProperty("assets", out var assets)) {
             foreach (var asset in assets.EnumerateArray()) {
                 var name = asset.GetProperty("name").GetString();
-                if (name == "UYALauncherUpdater.exe") {
+                if (name == "HorizonLauncherUpdater.exe") {
                     updaterUrl = asset.GetProperty("browser_download_url").GetString() ?? string.Empty;
                     break;
                 }

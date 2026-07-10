@@ -11,7 +11,7 @@ build-all.bat
 
 This will:
 1. Build HorizonLauncher.exe
-2. Build UYALauncherSetup.exe (which embeds HorizonLauncher.exe)
+2. Build installer.exe (which embeds HorizonLauncher.exe)
 
 ### Build Launcher Only (for testing)
 ```bash
@@ -23,7 +23,7 @@ build-launcher.bat
 To embed PCSX2 in the installer, you need to:
 
 1. Place PCSX2 files in a folder (e.g., `pcsx2-bundle/`)
-2. Add them as embedded resources in `UYALauncherSetup.csproj`:
+2. Add them as embedded resources in `installer.csproj`:
 
 ```xml
 <ItemGroup>
@@ -37,7 +37,7 @@ To embed PCSX2 in the installer, you need to:
 
 ## How It Works
 
-1. **UYALauncherSetup.exe** is a standalone installer
+1. **installer.exe** is a standalone installer
 2. It contains HorizonLauncher.exe embedded as a resource
 3. User runs the installer, selects install location
 4. Installer extracts everything to chosen folder:
