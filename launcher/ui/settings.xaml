@@ -248,7 +248,7 @@
                                 Margin="0,0,0,10"/>
 
                         <!-- Description -->
-                        <TextBlock Text="Horizon Launcher is a modern launcher and patch manager designed to streamline the PCSX2 experience for Ratchet: Deadlocked (UYA)."
+                        <TextBlock Text="Horizon Launcher is a modern launcher and patch manager designed to streamline the PCSX2 experience for Ratchet and Clank 3: Up Your Arsenal and Ratchet: Deadlocked."
                                 TextWrapping="Wrap"
                                 Foreground="{StaticResource TextBrush}"
                                 Margin="0,0,0,15"/>
@@ -303,9 +303,9 @@
                             <!-- GitHub -->
                             <TextBlock Margin="0,5,0,5">
                                 <Run Text="GitHub: "/>
-                                <Hyperlink NavigateUri="https://github.com/metroynome/uyalauncher"
+                                <Hyperlink NavigateUri="https://github.com/Horizon-Private-Server/horizon-launcher"
                                         RequestNavigate="Hyperlink_RequestNavigate">
-                                    https://github.com/metroynome/uyalauncher
+                                    https://github.com/Horizon-Private-Server/horizon-launcher
                                 </Hyperlink>
                             </TextBlock>
 
