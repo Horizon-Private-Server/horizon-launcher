@@ -9,7 +9,7 @@ using System.Windows;
 using Microsoft.Win32;
 using File = System.IO.File;
 
-namespace UYALauncherSetup;
+namespace HorizonLauncherInstaller;
 
 public partial class MainWindow : Window {
     private string _installPath = "";

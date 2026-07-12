@@ -61,7 +61,7 @@ public static class Updater {
             }
 
             // Download updater
-            var updaterPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "UYALauncherUpdater.exe");
+            var updaterPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "HorizonLauncherUpdater.exe");
 
             var progressWindow = new UpdateProgressWindow();
             progressWindow.Show();

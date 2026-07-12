@@ -1,7 +1,7 @@
 using System;
 using System.Windows;
 
-namespace UYALauncherSetup;
+namespace HorizonLauncherInstaller;
 
 public partial class App : Application {
     protected override void OnStartup(StartupEventArgs e) {

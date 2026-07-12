@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace UYALauncherUpdater;
+namespace HorizonLauncherUpdater;
 
 public partial class MainWindow : Window
 {

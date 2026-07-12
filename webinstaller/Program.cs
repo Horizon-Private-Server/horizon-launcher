@@ -132,7 +132,7 @@ public class InstallerWindow : Window {
             
             if (string.IsNullOrEmpty(installerUrl)) {
                 MessageBox.Show(
-                    "Could not find UYALauncherInstaller.exe in the latest release.\n\n" +
+                    "Could not find HorizonLauncherInstaller.exe in the latest release.\n\n" +
                     "Please visit GitHub to download manually.",
                     "Download Failed",
                     MessageBoxButton.OK,
