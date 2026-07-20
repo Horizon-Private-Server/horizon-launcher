@@ -198,6 +198,18 @@ public static class PatchManager {
         },
 
 
+        new PnachPatch {
+            IsEnabled = _ => true,
+            Target = PatchTarget.Multiplayer,
+            Description = "// Horizon Launcher: Client Type",
+            PatchCodes = new Dictionary<string, string> {
+                [Rac3NtscU + nameof(PatchTarget.Multiplayer)] =
+                    "patch=1,EE,200cffa0,extended,314e5a48\n",
+                [Rac3Pal + nameof(PatchTarget.Multiplayer)] =
+                    "patch=1,EE,200cffa0,extended,314e5a48\n"
+            }
+        },
+
         // Ratchet: Deadlocked patches
         new PnachPatch {
             IsEnabled = p => p.BootToMultiplayer,
